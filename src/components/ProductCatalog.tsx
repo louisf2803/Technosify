@@ -15,6 +15,7 @@ import {
   RotateCcw,
   MessageCircle,
 } from 'lucide-react';
+import { assetUrl } from '../utils/assets';
 
 interface ProductCatalogProps {
   initialCategory?: ProductCategory | 'all';
@@ -110,7 +111,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
 
           <div className="flex items-center gap-4 shrink-0">
             <img
-              src="/mascot/mascot-laptop.png"
+              src={assetUrl('mascot/mascot-laptop.png')}
               alt="Technosify Robot Laptop"
               className="w-24 h-24 sm:w-28 sm:h-28 object-contain bg-white rounded-2xl p-2 border-2 border-slate-900 shadow-[4px_4px_0px_#090D16]"
             />
@@ -252,7 +253,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
         {filteredProducts.length === 0 ? (
           <div className="text-center py-16 px-4 rounded-3xl border-2 border-slate-800 bg-[#EEF2FF]">
             <img
-              src="/mascot/mascot-wave.png"
+              src={assetUrl('mascot/mascot-wave.png')}
               alt="Robot Technosify"
               className="w-28 h-28 mx-auto object-contain mb-3"
             />

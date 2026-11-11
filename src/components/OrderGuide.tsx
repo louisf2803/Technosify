@@ -10,6 +10,7 @@ import {
   ExternalLink,
   CheckCircle2,
 } from 'lucide-react';
+import { assetUrl } from '../utils/assets';
 
 interface OrderGuideProps {
   onOpenWhatsApp: (topic?: string, product?: string) => void;
@@ -42,7 +43,7 @@ export const OrderGuide: React.FC<OrderGuideProps> = ({ onOpenWhatsApp }) => {
             </p>
           </div>
           <img
-            src="/mascot/mascot-sign-up.png"
+            src={assetUrl('mascot/mascot-sign-up.png')}
             alt="Robot Technosify Info"
             className="w-32 h-32 sm:w-40 sm:h-40 object-contain bg-white rounded-3xl p-3 border-2 border-slate-900 shadow-[6px_6px_0px_#090D16]"
           />
@@ -183,7 +184,7 @@ export const OrderGuide: React.FC<OrderGuideProps> = ({ onOpenWhatsApp }) => {
 
             <div className="lg:col-span-5 flex flex-col items-center text-center">
               <img
-                src="/mascot/mascot-megaphone.png"
+                src={assetUrl('mascot/mascot-megaphone.png')}
                 alt="Attention Robot Megaphone"
                 className="w-56 h-56 sm:w-64 sm:h-64 object-contain"
               />
@@ -200,7 +201,7 @@ export const OrderGuide: React.FC<OrderGuideProps> = ({ onOpenWhatsApp }) => {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
             <div className="flex items-center gap-4">
               <img
-                src="/mascot/mascot-sign-peek.png"
+                src={assetUrl('mascot/mascot-sign-peek.png')}
                 alt="FAQ Robot"
                 className="w-16 h-16 object-contain shrink-0"
               />

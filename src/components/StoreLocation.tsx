@@ -11,6 +11,7 @@ import {
   ShoppingBag,
   Building2,
 } from 'lucide-react';
+import { assetUrl } from '../utils/assets';
 
 interface StoreLocationProps {
   onOpenWhatsApp?: (topic?: string, product?: string) => void;
@@ -36,7 +37,7 @@ export const StoreLocation: React.FC<StoreLocationProps> = ({ onOpenWhatsApp }) 
             </p>
           </div>
           <img
-            src="/mascot/mascot-wave.png"
+            src={assetUrl('mascot/mascot-wave.png')}
             alt="Technosify Contact Robot"
             className="w-32 h-32 sm:w-40 sm:h-40 object-contain bg-white rounded-3xl p-3 border-2 border-slate-900 shadow-[6px_6px_0px_#090D16]"
           />

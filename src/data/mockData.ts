@@ -1,3 +1,5 @@
+import { assetUrl } from '../utils/assets';
+
 export type ProductCategory =
   | 'laptop'
   | 'all-in-one'
@@ -224,7 +226,7 @@ export const CATEGORIES: CategoryMeta[] = [
   },
 ];
 
-export const PRODUCTS: Product[] = [
+const RAW_PRODUCTS: Product[] = [
   // === 4 FEATURED HERO PRODUCTS MATCHING IMAGE.PNG ===
   {
     id: 'lenovo-thinkpad-e14-gen8-bfid',
@@ -1032,7 +1034,12 @@ export const PRODUCTS: Product[] = [
   },
 ];
 
-export const BLOG_POSTS: BlogPost[] = [
+export const PRODUCTS: Product[] = RAW_PRODUCTS.map((p) => ({
+  ...p,
+  image: assetUrl(p.image),
+}));
+
+const RAW_BLOG_POSTS: BlogPost[] = [
   {
     id: 'panduan-pengadaan-tkdn-instansi',
     title: 'Panduan Lengkap Pengadaan Laptop & PC All-in-One Bersertifikat TKDN untuk Instansi & Korporasi',
@@ -1099,6 +1106,11 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
   },
 ];
+
+export const BLOG_POSTS: BlogPost[] = RAW_BLOG_POSTS.map((b) => ({
+  ...b,
+  image: assetUrl(b.image),
+}));
 
 export const FAQ_LIST: FAQItem[] = [
   {

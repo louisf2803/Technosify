@@ -11,6 +11,7 @@ import {
   FileCheck2,
   ShieldCheck,
 } from 'lucide-react';
+import { assetUrl } from '../utils/assets';
 
 interface FooterProps {
   onNavigate: (page: PageId) => void;
@@ -35,7 +36,7 @@ export const Footer: React.FC<FooterProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-5">
             <img
-              src="/mascot/mascot-thankyou.png"
+              src={assetUrl('mascot/mascot-thankyou.png')}
               alt="Technosify Robot Thank You"
               className="w-20 h-20 object-contain bg-white rounded-2xl p-1.5 border-2 border-slate-900 shrink-0"
             />

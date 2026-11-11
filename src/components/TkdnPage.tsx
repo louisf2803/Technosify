@@ -10,6 +10,7 @@ import {
   MessageCircle,
   CheckCircle2,
 } from 'lucide-react';
+import { assetUrl } from '../utils/assets';
 
 interface TkdnPageProps {
   onSelectProductDetail: (product: Product) => void;
@@ -111,7 +112,7 @@ export const TkdnPage: React.FC<TkdnPageProps> = ({
                     </div>
                   </div>
                   <img
-                    src="/mascot/mascot-megaphone.png"
+                    src={assetUrl('mascot/mascot-megaphone.png')}
                     alt="Maskot TKDN Technosify"
                     className="w-32 h-32 sm:w-36 sm:h-36 object-contain shrink-0"
                   />

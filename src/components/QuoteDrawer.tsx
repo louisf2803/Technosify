@@ -13,6 +13,7 @@ import {
   ShoppingBag,
 } from 'lucide-react';
 import { TechnosifyLogo } from './TechnosifyLogo';
+import { assetUrl } from '../utils/assets';
 
 export interface QuoteItem {
   product: Product;
@@ -120,7 +121,7 @@ export const QuoteDrawer: React.FC<QuoteDrawerProps> = ({
           {items.length === 0 ? (
             <div className="text-center py-12 px-4 rounded-3xl border-2 border-dashed border-slate-300 bg-slate-50">
               <img
-                src="/mascot/mascot-laptop.png"
+                src={assetUrl('mascot/mascot-laptop.png')}
                 alt="Technosify Robot"
                 className="w-32 h-32 mx-auto object-contain mb-4"
               />

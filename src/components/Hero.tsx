@@ -9,6 +9,7 @@ import {
 } from '../data/mockData';
 import { ProductCard } from './ProductCard';
 import { PageId } from './Navbar';
+import { assetUrl } from '../utils/assets';
 import {
   ArrowRight,
   ExternalLink,
@@ -97,7 +98,7 @@ export const Hero: React.FC<HeroProps> = ({
               <div className="bg-white rounded-[28px] p-6 sm:p-8 border-2 border-slate-900 shadow-[8px_8px_0px_#090D16] text-slate-900">
                 <div className="flex justify-center py-2">
                   <img
-                    src="/mascot/mascot-peace.png"
+                    src={assetUrl('mascot/mascot-peace.png')}
                     alt="Maskot Robot Technosify"
                     className="w-56 h-56 sm:w-64 sm:h-64 object-contain drop-shadow-sm"
                   />
@@ -305,7 +306,7 @@ export const Hero: React.FC<HeroProps> = ({
 
             <div className="lg:col-span-5 flex justify-center">
               <img
-                src="/mascot/mascot-megaphone.png"
+                src={assetUrl('mascot/mascot-megaphone.png')}
                 alt="Robot Megaphone TKDN Ready"
                 className="w-60 h-60 sm:w-72 sm:h-72 object-contain"
               />
@@ -327,7 +328,7 @@ export const Hero: React.FC<HeroProps> = ({
               </h2>
             </div>
             <img
-              src="/mascot/mascot-cool.png"
+              src={assetUrl('mascot/mascot-cool.png')}
               alt="Technosify Cool Robot"
               className="w-28 h-28 sm:w-36 sm:h-36 object-contain self-end sm:self-auto"
             />

@@ -9,6 +9,7 @@ import {
   Cpu,
   ShieldAlert,
 } from 'lucide-react';
+import { assetUrl } from '../utils/assets';
 
 interface WhatsAppWidgetProps {
   isOpen: boolean;
@@ -101,7 +102,7 @@ export const WhatsAppWidget: React.FC<WhatsAppWidgetProps> = ({
             className="group flex items-center gap-2.5 pl-3 pr-4 py-2.5 rounded-full bg-[#0026FF] hover:bg-blue-700 text-white font-extrabold text-xs sm:text-sm border-2 border-slate-900 shadow-[4px_4px_0px_#090D16] cursor-pointer transition-all"
           >
             <img
-              src="/mascot/mascot-peace.png"
+              src={assetUrl('mascot/mascot-peace.png')}
               alt="Chat CS"
               className="w-8 h-8 rounded-full bg-white object-contain p-0.5 border border-slate-900"
             />
@@ -117,7 +118,7 @@ export const WhatsAppWidget: React.FC<WhatsAppWidgetProps> = ({
           <div className="bg-[#0026FF] text-white p-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-                src="/mascot/mascot-peace.png"
+                src={assetUrl('mascot/mascot-peace.png')}
                 alt="Technosify CS"
                 className="w-11 h-11 rounded-2xl bg-white p-1 object-contain border-2 border-slate-900"
               />
