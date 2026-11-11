@@ -1,0 +1,6 @@
+{
+  "name": "Technosify.id - Toko Komputer & IT Solutions Surabaya",
+  "description": "Website resmi Technosify.id: Solusi perangkat IT, laptop bisnis & gaming, PC AIO, server resmi bergaransi di Surabaya dengan integrasi Tokopedia, Shopee, dan konsultasi WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
